@@ -11,15 +11,57 @@
         <a href="index.html" class="text-blue-400 hover:underline mb-8 block">&larr; Back to Home</a>
         
         <h1 class="text-5xl font-bold mb-6">Phobos Pulsar</h1>
-        <p class="text-slate-400 text-lg mb-8">High-precision GPS tracking and IoT communication system.</p>
+        <p class="text-slate-400 text-lg mb-8">Personal emergency alert device for location tracking via LTE-M.</p>
         
+        <!-- Problem & Solution -->
+        <div class="grid md:grid-cols-2 gap-8 mb-8">
+            <div class="bg-slate-800 p-6 rounded-xl border border-slate-700">
+                <h2 class="text-xl font-bold mb-3 text-emerald-400">The Problem</h2>
+                <p class="text-slate-300 text-sm">Developed following an emergency situation where a lack of communication during a crisis highlighted the need for a reliable, autonomous safety device[cite: 1].</p>
+            </div>
+            <div class="bg-slate-800 p-6 rounded-xl border border-slate-700">
+                <h2 class="text-xl font-bold mb-3 text-blue-400">The Solution</h2>
+                <p class="text-slate-300 text-sm">A compact, standalone device allowing emergency location transmission via a single 3-second button press, independent of WiFi or smartphones[cite: 1].</p>
+            </div>
+        </div>
+
+        <!-- Technical Details -->
+        <div class="bg-slate-800 p-8 rounded-xl border border-slate-700 mb-8">
+            <h2 class="text-2xl font-bold mb-6">Technical Specifications</h2>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left text-sm text-slate-300">
+                    <thead class="text-slate-100 uppercase border-b border-slate-700">
+                        <tr><th class="pb-3">Component</th><th class="pb-3">Reference</th></tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-700">
+                        <tr><td class="py-3">Main Board</td><td>LilyGo T-SIM7080G (LTE-M/GPS)</td></tr>
+                        <tr><td class="py-3">Power</td><td>LiPo 3.7V 500mAh</td></tr>
+                        <tr><td class="py-3">Feedback</td><td>Haptic vibration motor</td></tr>
+                        <tr><td class="py-3">Enclosure</td><td>3D Printed PLA+</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Workflow -->
+        <div class="bg-slate-800 p-8 rounded-xl border border-slate-700 mb-8">
+            <h2 class="text-2xl font-bold mb-4">How it works</h2>
+            <ul class="list-decimal list-inside text-slate-300 space-y-2">
+                <li>3-second long press on the button[cite: 1].</li>
+                <li>GPS location acquisition[cite: 1].</li>
+                <li>Data transmission via LTE-M to a defined contact (Telegram Bot API)[cite: 1].</li>
+                <li>Haptic feedback confirmation[cite: 1].</li>
+            </ul>
+        </div>
+
+        <!-- Future Iterations -->
         <div class="bg-slate-800 p-8 rounded-xl border border-slate-700">
-            <h2 class="text-2xl font-bold mb-4">Technical Overview</h2>
+            <h2 class="text-2xl font-bold mb-4">Future Improvements</h2>
             <ul class="list-disc list-inside text-slate-300 space-y-2">
-                <li><strong>MCU:</strong> [Ajoute ton microcontrôleur ici]</li>
-                <li><strong>Connectivity:</strong> LTE/GNSS integration</li>
-                <li><strong>Power Management:</strong> AXP2101 PMU</li>
-                <li><strong>Focus:</strong> Low-power optimization for long-term deployment</li>
+                <li>Custom PCB design for improved reliability and space optimization[cite: 1].</li>
+                <li>Integration of native LilyGo buttons for reduced device volume[cite: 1].</li>
+                <li>Exploration of waterproof housing for outdoor usage[cite: 1].</li>
+                <li>Battery level indication system[cite: 1].</li>
             </ul>
         </div>
     </div>
