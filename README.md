@@ -1,7 +1,7 @@
 # Portfolio - Aloïs Albingre
 **Engineering Student | Interaction Design & Embedded Systems**
 
-Welcome to my portfolio! I am currently an engineering student, transitioning my background in Interaction Design toward embedded systems and electronics. This space reflects my technical journey.
+Welcome to my portfolio! This space reflects my technical journey.
 
 ---
 
