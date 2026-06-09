@@ -1,27 +1,27 @@
-# 0x416C.github.io - Portfolio - Aloïs Albingre
-**Embedded Systems Engineering Student | IoT & Electronics**
+# Portfolio - Aloïs Albingre
+**Engineering Student | Interaction Design & Embedded Systems**
 
-Welcome to my portfolio! I am an engineering student passionate about hardware design, embedded firmware, and low-power IoT solutions. This repository hosts my personal portfolio website, where I showcase my projects and technical journey.
+Welcome to my portfolio! This space reflects my technical journey.
 
 ---
 
 ## 🚀 About Me
-I am currently focused on building robust and efficient embedded systems. My goal is to bridge the gap between complex hardware and real-world utility, ensuring reliability and performance in every project I undertake.
+French engineering student, with a foundation in Interaction Design and a growing passion for electronics, I enjoy identifying everyday problems and crafting hardware-based solutions to solve them. My experience as an Operational Reservist in the French Army has instilled in me discipline, rigor, and the ability to solve complex problems under pressure.
 
-## 🛠 Skills & Interests
-* **Embedded Systems:** Firmware development, hardware architecture.
-* **Electronics:** PCB design, circuit analysis, prototyping.
-* **Connectivity:** IoT protocols, LTE-M, GNSS integration.
-* **Tools:** KiCad, Fritzing, Git, VS Code, Tailwind CSS.
+## 🛠 Technical Skills
+* **Prototyping & Design:** 3D Modeling (Shapr3D, Fusion 360), 3D printing.
+* **Programming:** C# (Unity), C++ (Embedded), Python.
+* **Electronics & IoT:** GNSS/LTE integration, circuit analysis, and experience with laboratory measurement tools (oscilloscopes).
+* **Methodologies:** Agile development, technical documentation, and project coordination.
 
 ## 📁 Featured Projects
-* **[Phobos Pulsar](https://0x416c.github.io/phobos-pulsar.html):** An autonomous personal emergency alert device using LTE-M and GPS technology to provide a reliable safety net in critical situations.
+* **[Phobos Pulsar](https://0x416c.github.io/phobos-pulsar.html):** A standalone emergency beacon. Designed to operate independently of smartphones, it uses LTE-M and GPS technologies to transmit location data at the press of a button.
 
 ---
 
 ## 📬 Contact
 * **GitHub:** [0x416C](https://github.com/0x416C)
-* **Email:** Pro email soon
+* **Email:** alois.albingre.pro@gmail.com
 
 ---
-*Built with Tailwind CSS | Hosted on GitHub Pages*
+*Built with GitHub Pages*
