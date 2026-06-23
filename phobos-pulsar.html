@@ -102,22 +102,24 @@
         </div>
 
         <!-- Lightbox -->
-        <div id="lightbox" class="fixed inset-0 z-50 items-center justify-center bg-black/85 p-4 hidden" role="dialog" aria-modal="true">
-            <div class="relative max-w-4xl w-full" id="lightbox-controls">
+        <div id="lightbox" class="fixed inset-0 z-50 items-center justify-center bg-black/85 px-4 py-12 hidden" role="dialog" aria-modal="true">
+            <div class="relative max-w-4xl w-full flex flex-col items-center gap-4" id="lightbox-controls">
                 <button id="lb-close" aria-label="Close"
-                        class="absolute top-0 right-0 -mt-10 rounded-full border border-slate-600 bg-slate-900/90 px-4 py-1.5 text-sm text-slate-100 hover:bg-slate-700 transition-colors">
+                        class="self-end rounded-full border border-slate-600 bg-slate-900/90 px-4 py-1.5 text-sm text-slate-100 hover:bg-slate-700 transition-colors">
                     ✕ Close
                 </button>
-                <button id="lb-prev" aria-label="Previous"
-                        class="absolute left-0 top-1/2 -translate-y-1/2 -ml-12 rounded-full border border-slate-600 bg-slate-900/90 px-3 py-2 text-slate-100 hover:bg-slate-700 transition-colors">
-                    ←
-                </button>
-                <button id="lb-next" aria-label="Next"
-                        class="absolute right-0 top-1/2 -translate-y-1/2 -mr-12 rounded-full border border-slate-600 bg-slate-900/90 px-3 py-2 text-slate-100 hover:bg-slate-700 transition-colors">
-                    →
-                </button>
-                <img id="lb-img" src="" alt="" class="w-full h-auto rounded-xl shadow-2xl">
-                <p id="lb-caption" class="mt-4 text-center text-slate-300 text-sm italic"></p>
+                <div class="relative w-full flex items-center justify-center">
+                    <button id="lb-prev" aria-label="Previous"
+                            class="absolute left-0 -ml-2 sm:-ml-12 rounded-full border border-slate-600 bg-slate-900/90 px-3 py-2 text-slate-100 hover:bg-slate-700 transition-colors z-10">
+                        ←
+                    </button>
+                    <img id="lb-img" src="" alt="" class="max-h-[70vh] w-auto max-w-full rounded-xl shadow-2xl object-contain">
+                    <button id="lb-next" aria-label="Next"
+                            class="absolute right-0 -mr-2 sm:-mr-12 rounded-full border border-slate-600 bg-slate-900/90 px-3 py-2 text-slate-100 hover:bg-slate-700 transition-colors z-10">
+                        →
+                    </button>
+                </div>
+                <p id="lb-caption" class="text-center text-slate-300 text-sm italic"></p>
             </div>
         </div>
 
