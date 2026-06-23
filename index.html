@@ -6,46 +6,66 @@
     <title>Portfolio | 0x416C</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-slate-900 text-white font-sans p-8">
+<body class="bg-slate-900 text-white font-sans px-4 py-8 sm:p-8">
     <div class="max-w-3xl mx-auto">
+
         <header class="mb-12">
-            <h1 class="text-4xl font-bold mb-2">0x416C - Aloïs Albingre</h1>
+            <h1 class="text-3xl sm:text-4xl font-bold mb-2">0x416C - Aloïs Albingre</h1>
             <p class="text-slate-400">EEEA Student | IoT & Electronics Enthusiast</p>
         </header>
 
         <section>
             <h2 class="text-2xl font-semibold mb-6 border-b border-slate-700 pb-2">Projects</h2>
-            
+
             <div class="flex flex-col gap-4">
-                
-                <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 hover:border-blue-500 hover:scale-[1.02] transition-all duration-300 flex flex-col sm:flex-row gap-6 items-start">
-                    <img src="img/v3.0-Product.jpeg" alt="Phobos Pulsar" class="w-32 h-32 object-cover rounded-md border border-slate-700 flex-shrink-0 mx-auto sm:mx-0">
-                    
-                    <div class="min-w-0">
-                        <h3 class="text-xl font-bold mb-2">Phobos Pulsar</h3>
-                        <p class="text-slate-300 mb-4">Personal emergency alert device for location tracking via GPS and LTE-M.</p>
-                        <div class="flex flex-col sm:flex-row gap-2">
-                            <a href="https://github.com/0x416C/phobos-pulsar" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-500 text-white text-sm font-semibold px-6 py-2 rounded transition-all duration-300 hover:scale-105">View on GitHub</a>
-                            <a href="phobos-pulsar.html" class="inline-block bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-semibold px-6 py-2 rounded transition-all duration-300 hover:scale-105">Read more</a>
+
+                <!-- Phobos Pulsar -->
+                <div class="bg-slate-800 rounded-lg border border-slate-700 hover:border-blue-500 hover:scale-[1.02] transition-all duration-300 p-4 sm:p-6 flex flex-col sm:flex-row gap-4 sm:gap-6">
+                    <img src="img/v3.0-Product.jpeg" alt="Phobos Pulsar"
+                         class="w-full sm:w-32 sm:h-32 aspect-square sm:aspect-auto object-cover rounded-md border border-slate-700 flex-shrink-0 sm:self-start">
+                    <div class="flex flex-col gap-3">
+                        <div>
+                            <h3 class="text-xl font-bold mb-1">Phobos Pulsar</h3>
+                            <p class="text-slate-300 text-sm">Personal emergency alert device for location tracking via GPS and LTE-M.</p>
+                        </div>
+                        <div class="flex flex-row gap-2">
+                            <a href="https://github.com/0x416C/phobos-pulsar" target="_blank"
+                               class="bg-blue-600 hover:bg-blue-500 text-white text-sm font-semibold px-4 py-2 rounded transition-all duration-300 hover:scale-105">
+                                GitHub
+                            </a>
+                            <a href="phobos-pulsar.html"
+                               class="bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-semibold px-4 py-2 rounded transition-all duration-300 hover:scale-105">
+                                Read more
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 hover:border-blue-500 hover:scale-[1.02] transition-all duration-300 flex flex-col sm:flex-row gap-6 items-start">
-                    <img src="img/ComingSoon.png" alt="Projet 2" class="w-32 h-32 object-cover rounded-md border border-slate-700 flex-shrink-0 mx-auto sm:mx-0">
-                    
-                    <div class="min-w-0">
-                        <h3 class="text-xl font-bold mb-2">Coming Soon...</h3>
-                        <p class="text-slate-300 mb-4">Finalizing details...</p>
-                        <div class="flex flex-col sm:flex-row gap-2">
-                            <a href="#" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-500 text-white text-sm font-semibold px-6 py-2 rounded transition-all duration-300 hover:scale-105">View on GitHub</a>
-                            <a href="#" class="inline-block bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-semibold px-6 py-2 rounded transition-all duration-300 hover:scale-105">Read more</a>
+                <!-- Coming Soon -->
+                <div class="bg-slate-800 rounded-lg border border-slate-700 hover:border-blue-500 hover:scale-[1.02] transition-all duration-300 p-4 sm:p-6 flex flex-col sm:flex-row gap-4 sm:gap-6">
+                    <img src="img/ComingSoon.png" alt="Coming Soon"
+                         class="w-full sm:w-32 sm:h-32 aspect-square sm:aspect-auto object-cover rounded-md border border-slate-700 flex-shrink-0 sm:self-start">
+                    <div class="flex flex-col gap-3">
+                        <div>
+                            <h3 class="text-xl font-bold mb-1">Coming Soon...</h3>
+                            <p class="text-slate-300 text-sm">Finalizing details...</p>
+                        </div>
+                        <div class="flex flex-row gap-2">
+                            <a href="#" target="_blank"
+                               class="bg-blue-600 hover:bg-blue-500 text-white text-sm font-semibold px-4 py-2 rounded transition-all duration-300 hover:scale-105">
+                                GitHub
+                            </a>
+                            <a href="#"
+                               class="bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-semibold px-4 py-2 rounded transition-all duration-300 hover:scale-105">
+                                Read more
+                            </a>
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </section>
+
     </div>
 </body>
 </html>

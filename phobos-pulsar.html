@@ -5,118 +5,213 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phobos Pulsar | Project Details</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        #lightbox-controls button {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        #lightbox:hover #lightbox-controls button,
+        #lightbox-controls button:focus {
+            opacity: 1;
+        }
+        @media (pointer: coarse) {
+            #lightbox-controls button { opacity: 1; }
+        }
+    </style>
 </head>
-<body class="bg-slate-900 text-white p-4 sm:p-8">
+<body class="bg-slate-900 text-white px-4 py-8 sm:p-8">
     <div class="max-w-4xl mx-auto">
+
         <a href="index.html" class="text-blue-400 hover:underline mb-8 block">&larr; Back to Home</a>
-        
-        <h1 class="text-4xl sm:text-5xl font-bold mb-6">Phobos Pulsar</h1>
+
+        <h1 class="text-3xl sm:text-5xl font-bold mb-4">Phobos Pulsar</h1>
         <p class="text-slate-400 text-lg mb-8">Personal emergency alert device for location tracking via GPS and LTE-M.</p>
-        
+
         <!-- Problem & Solution -->
-        <div class="grid md:grid-cols-2 gap-8 mb-8">
+        <div class="grid md:grid-cols-2 gap-6 mb-8">
             <div class="bg-slate-800 p-6 rounded-xl border border-slate-700">
                 <h2 class="text-xl font-bold mb-3 text-red-500">The Problem</h2>
-                <p class="text-slate-300 text-justify text-sm">During a personal emergency, 
-                    I realized that relying on a smartphone for safety is a risk. 
+                <p class="text-slate-300 text-sm text-justify">During a personal emergency,
+                    I realized that relying on a smartphone for safety is a risk.
                     When the battery is dead, you are cut off from the world.
-                    I needed a way to signal for help that is always ready, 
+                    I needed a way to signal for help that is always ready,
                     regardless of mobile apps, WiFi or secondary devices.</p>
             </div>
             <div class="bg-slate-800 p-6 rounded-xl border border-slate-700">
                 <h2 class="text-xl font-bold mb-3 text-green-400">The Solution</h2>
-                <p class="text-slate-300 text-justify text-sm">Phobos Pulsar enables users to 
-                    transmit their GPS location to a pre-defined contact with a single 3-second button press. 
-                    By operating independently of WiFi and smartphones via LTE-M connectivity, 
+                <p class="text-slate-300 text-sm text-justify">Phobos Pulsar enables users to
+                    transmit their GPS location to a pre-defined contact with a single 3-second button press.
+                    By operating independently of WiFi and smartphones via LTE-M connectivity,
                     it serves as a reliable emergency safety net.</p>
             </div>
         </div>
 
         <!-- Gallery -->
-        <div class="bg-slate-800 p-8 rounded-xl border border-slate-700 mb-8 mt-8">
-            <h2 class="text-2xl font-bold mb-8 text-white">Design & Fabrication</h2>
+        <div class="bg-slate-800 p-6 sm:p-8 rounded-xl border border-slate-700 mb-8">
+            <h2 class="text-2xl font-bold mb-8">Design & Fabrication</h2>
 
-            <div class="mb-8">
-                <figure class="border border-slate-700 rounded-lg p-3 bg-slate-900/50 shadow-inner">
-                    <img src="img/Evolution.jpeg" alt="Phobos Pulsar Design Evolution" class="rounded-lg w-full h-auto">
+            <!-- Image principale -->
+            <div class="mb-6">
+                <figure class="border border-slate-700 rounded-lg p-3 bg-slate-900/50">
+                    <button type="button" data-index="0" class="gallery-btn w-full group">
+                        <img src="img/Evolution.jpeg" alt="Design Evolution"
+                             class="rounded-lg w-full h-auto transition-transform duration-200 group-hover:scale-[1.02] cursor-zoom-in">
+                    </button>
                     <figcaption class="text-center text-sm text-slate-400 mt-3 italic">
                         Exploded view of the first iterations of the 3D printed casing.
                     </figcaption>
                 </figure>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Grille 2x2 -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+
                 <figure class="border border-slate-700 rounded-lg p-3 bg-slate-900/50">
-                    <img src="img/Bad-3D-Impression.jpeg" alt="Assembled device external view" class="rounded-lg w-full aspect-square object-cover">
-                    <figcaption class="text-sm text-slate-400 mt-3 font-medium">
-                        Issues with 3D printing.
-                    </figcaption>
+                    <button type="button" data-index="1" class="gallery-btn w-full group">
+                        <img src="img/Bad-3D-Impression.jpeg" alt="3D Printing Issues"
+                             class="rounded-lg w-full aspect-square object-cover transition-transform duration-200 group-hover:scale-[1.02] cursor-zoom-in">
+                    </button>
+                    <figcaption class="text-sm text-slate-400 mt-3">Issues with 3D printing.</figcaption>
                 </figure>
 
                 <figure class="border border-slate-700 rounded-lg p-3 bg-slate-900/50">
-                    <img src="img/GPS-LED.jpeg" alt="SIM7080G Board detailed view" class="rounded-lg w-full aspect-square object-cover">
-                    <figcaption class="text-sm text-slate-400 mt-3 font-medium">
-                        It's alive! Active GPS indicator.
-                    </figcaption>
-                </figure>
-                    
-                <figure class="border border-slate-700 rounded-lg p-3 bg-slate-900/50">
-                    <img src="img/Supports.jpeg" alt="3D printing process" class="rounded-lg w-full aspect-square object-cover">
-                    <figcaption class="text-sm text-slate-400 mt-3 font-medium">
-                        Support Management for the Enclosure.
-                    </figcaption>
+                    <button type="button" data-index="2" class="gallery-btn w-full group">
+                        <img src="img/GPS-LED.jpeg" alt="GPS LED Indicator"
+                             class="rounded-lg w-full aspect-square object-cover transition-transform duration-200 group-hover:scale-[1.02] cursor-zoom-in">
+                    </button>
+                    <figcaption class="text-sm text-slate-400 mt-3">It's alive! Active GPS indicator.</figcaption>
                 </figure>
 
+                <figure class="border border-slate-700 rounded-lg p-3 bg-slate-900/50">
+                    <button type="button" data-index="3" class="gallery-btn w-full group">
+                        <img src="img/Supports.jpeg" alt="Support Management"
+                             class="rounded-lg w-full aspect-square object-cover transition-transform duration-200 group-hover:scale-[1.02] cursor-zoom-in">
+                    </button>
+                    <figcaption class="text-sm text-slate-400 mt-3">Support Management for the Enclosure.</figcaption>
+                </figure>
 
                 <figure class="border border-slate-700 rounded-lg p-3 bg-slate-900/50">
-                    <img src="img/v3.0-Product.jpeg" alt="Assembled device external view" class="rounded-lg w-full aspect-square object-cover">
-                    <figcaption class="text-sm text-slate-400 mt-3 font-medium">
-                        Final Prototype (Version 3.0) : Ergonomic Integration.
-                    </figcaption>
+                    <button type="button" data-index="4" class="gallery-btn w-full group">
+                        <img src="img/v3.0-Product.jpeg" alt="Final Prototype v3.0"
+                             class="rounded-lg w-full aspect-square object-cover transition-transform duration-200 group-hover:scale-[1.02] cursor-zoom-in">
+                    </button>
+                    <figcaption class="text-sm text-slate-400 mt-3">Final Prototype (Version 3.0) : Ergonomic Integration.</figcaption>
                 </figure>
 
             </div>
         </div>
 
-        <!-- Technical Details -->
-        <div class="bg-slate-800 p-8 rounded-xl border border-slate-700 mb-8">
+        <!-- Lightbox -->
+        <div id="lightbox" class="fixed inset-0 z-50 items-center justify-center bg-black/85 p-4 hidden" role="dialog" aria-modal="true">
+            <div class="relative max-w-4xl w-full" id="lightbox-controls">
+                <button id="lb-close" aria-label="Close"
+                        class="absolute top-0 right-0 -mt-10 rounded-full border border-slate-600 bg-slate-900/90 px-4 py-1.5 text-sm text-slate-100 hover:bg-slate-700 transition-colors">
+                    ✕ Close
+                </button>
+                <button id="lb-prev" aria-label="Previous"
+                        class="absolute left-0 top-1/2 -translate-y-1/2 -ml-12 rounded-full border border-slate-600 bg-slate-900/90 px-3 py-2 text-slate-100 hover:bg-slate-700 transition-colors">
+                    ←
+                </button>
+                <button id="lb-next" aria-label="Next"
+                        class="absolute right-0 top-1/2 -translate-y-1/2 -mr-12 rounded-full border border-slate-600 bg-slate-900/90 px-3 py-2 text-slate-100 hover:bg-slate-700 transition-colors">
+                    →
+                </button>
+                <img id="lb-img" src="" alt="" class="w-full h-auto rounded-xl shadow-2xl">
+                <p id="lb-caption" class="mt-4 text-center text-slate-300 text-sm italic"></p>
+            </div>
+        </div>
+
+        <!-- Technical Specifications -->
+        <div class="bg-slate-800 p-6 sm:p-8 rounded-xl border border-slate-700 mb-8">
             <h2 class="text-2xl font-bold mb-6">Technical Specifications</h2>
             <div class="overflow-x-auto">
                 <table class="w-full text-left text-sm text-slate-300">
                     <thead class="text-slate-100 uppercase border-b border-slate-700">
-                        <tr><th class="pb-3">Component</th><th class="pb-3">Reference</th></tr>
+                        <tr>
+                            <th class="pb-3 pr-4">Component</th>
+                            <th class="pb-3">Reference</th>
+                        </tr>
                     </thead>
                     <tbody class="divide-y divide-slate-700">
-                        <tr><td class="py-3">Main Board</td><td>LilyGo T-SIM7080G (LTE-M/GPS)</td></tr>
-                        <tr><td class="py-3">Power</td><td>LiPo 3.7V 500mAh</td></tr>
-                        <tr><td class="py-3">Feedback</td><td>Haptic vibration motor</td></tr>
-                        <tr><td class="py-3">Enclosure</td><td>3D Printed PLA+</td></tr>
+                        <tr><td class="py-3 pr-4">Main Board</td><td>LilyGo T-SIM7080G (LTE-M/GPS)</td></tr>
+                        <tr><td class="py-3 pr-4">Power</td><td>LiPo 3.7V 500mAh</td></tr>
+                        <tr><td class="py-3 pr-4">Feedback</td><td>Haptic vibration motor</td></tr>
+                        <tr><td class="py-3 pr-4">Enclosure</td><td>3D Printed PLA+</td></tr>
                     </tbody>
                 </table>
             </div>
         </div>
 
-        <!-- Workflow -->
-        <div class="bg-slate-800 p-8 rounded-xl border border-slate-700 mb-8">
+        <!-- How it works -->
+        <div class="bg-slate-800 p-6 sm:p-8 rounded-xl border border-slate-700 mb-8">
             <h2 class="text-2xl font-bold mb-4">How it works</h2>
-            <ul class="list-decimal list-inside text-slate-300 space-y-2">
+            <ol class="list-decimal list-inside text-slate-300 space-y-2 text-sm">
                 <li>3-second long press on the button.</li>
                 <li>GPS location acquisition.</li>
                 <li>Data transmission via LTE-M to a defined contact (Telegram Bot API).</li>
                 <li>Haptic feedback confirmation.</li>
-            </ul>
+            </ol>
         </div>
 
-        <!-- Future Iterations -->
-        <div class="bg-slate-800 p-8 rounded-xl border border-slate-700">
+        <!-- Future Improvements -->
+        <div class="bg-slate-800 p-6 sm:p-8 rounded-xl border border-slate-700">
             <h2 class="text-2xl font-bold mb-4">Future Improvements</h2>
-            <ul class="list-disc list-inside text-slate-300 space-y-2">
+            <ul class="list-disc list-inside text-slate-300 space-y-2 text-sm">
                 <li>Custom PCB design for improved reliability and space optimization.</li>
                 <li>Integration of native LilyGo buttons for reduced device volume.</li>
                 <li>Exploration of waterproof housing for outdoor usage.</li>
                 <li>Battery level indication system.</li>
             </ul>
         </div>
+
     </div>
+
+    <script>
+        const gallery = [
+            { src: 'img/Evolution.jpeg',          caption: 'Exploded view of the first iterations of the 3D printed casing.' },
+            { src: 'img/Bad-3D-Impression.jpeg',  caption: 'Issues with 3D printing.' },
+            { src: 'img/GPS-LED.jpeg',             caption: "It's alive! Active GPS indicator." },
+            { src: 'img/Supports.jpeg',            caption: 'Support Management for the Enclosure.' },
+            { src: 'img/v3.0-Product.jpeg',        caption: 'Final Prototype (Version 3.0) : Ergonomic Integration.' },
+        ];
+
+        const lightbox   = document.getElementById('lightbox');
+        const lbImg      = document.getElementById('lb-img');
+        const lbCaption  = document.getElementById('lb-caption');
+        let current      = 0;
+
+        function open(index) {
+            current = (index + gallery.length) % gallery.length;
+            lbImg.src        = gallery[current].src;
+            lbImg.alt        = gallery[current].caption;
+            lbCaption.textContent = gallery[current].caption;
+            lightbox.classList.remove('hidden');
+            lightbox.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function close() {
+            lightbox.classList.add('hidden');
+            lightbox.classList.remove('flex');
+            document.body.style.overflow = '';
+        }
+
+        document.querySelectorAll('.gallery-btn').forEach(btn => {
+            btn.addEventListener('click', () => open(+btn.dataset.index));
+        });
+
+        document.getElementById('lb-close').addEventListener('click', close);
+        document.getElementById('lb-prev').addEventListener('click', e => { e.stopPropagation(); open(current - 1); });
+        document.getElementById('lb-next').addEventListener('click', e => { e.stopPropagation(); open(current + 1); });
+
+        lightbox.addEventListener('click', e => { if (e.target === lightbox) close(); });
+
+        document.addEventListener('keydown', e => {
+            if (lightbox.classList.contains('hidden')) return;
+            if (e.key === 'Escape')      close();
+            if (e.key === 'ArrowRight')  open(current + 1);
+            if (e.key === 'ArrowLeft')   open(current - 1);
+        });
+    </script>
 </body>
 </html>
